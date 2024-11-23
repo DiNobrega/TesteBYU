@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+header {
+    background-color: #004d3b;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 200px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background: url(https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/rafting-esporte.jpg) no-repeat center center/cover; 
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
+}
+
+
+#hero .hero-content {
+    position: relative; 
+    z-index: 1; 
+    color: white; 
+    padding: 20px;
+}
+
+#hero .hero-button {
+    background-color: orange; 
+    color: white; 
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#hero .hero-button:hover {
+    background-color: darkorange; 
+}
+
+
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+p {
+    margin-bottom: 40px; /* Ajuste esse valor para o espaço que você deseja */
+}
+
+
+.cta-button:hover {
+    background-color: #ff471a;
+}
+
+/* Features Section */
+#features {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+#features .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.feature-item {
+    width: 30%;
+    padding: 20px;
+    background-color: #e7f6f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+}
+
+/* Call to Action Section */
+#cta {
+    background-color: #004d3b;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#cta .cta-button {
+    font-size: 1.5rem;
+    padding: 20px 40px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
